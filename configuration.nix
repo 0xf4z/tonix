@@ -6,9 +6,10 @@
     ./modules/ly.nix
     ./modules/fonts.nix
     ./modules/vm.nix
-    ./modules/bluetooth.nix
+    ./pkgs/bluetooth.nix
     ./modules/docker.nix
-    ./modules/xdg.nix
+    ./pkgs/xdg.nix
+    ./modules/wm/niri.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -23,6 +24,7 @@
   
   nixpkgs.config.allowUnfree = true;
 
+
   users.users.zenith = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "libvirtd" "kvm" ];
@@ -32,7 +34,6 @@
     neovim
     wget
     curl
-    fastfetch
     ripgrep
   ];
 

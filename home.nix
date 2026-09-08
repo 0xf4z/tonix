@@ -6,8 +6,12 @@
 	./modules/kitty.nix
 	./modules/git.nix
 	./modules/bash.nix
-	./modules/brave.nix
-	./modules/wm/niri.nix
+	./modules/fastfetch.nix
+	./pkgs/utils.nix
+	./home-modules/niri.nix
+	./home-modules/waypaper.nix
+	./home-modules/gtk.nix
+	./home-modules/qt.nix
   ];
   home.username = "zenith";
   home.homeDirectory = "/home/zenith";

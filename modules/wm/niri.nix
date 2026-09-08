@@ -1,8 +1,7 @@
 { inputs, ... }:
 {
-   imports = [ inputs.niri.homeModules.niri ];
+   imports = [ inputs.niri.nixosModules.niri ];
 	programs.niri.enable = true;
 
-	  xdg.configFile."niri/config.kdl".source = ./config.kdl;
 
 }

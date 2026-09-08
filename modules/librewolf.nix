@@ -17,10 +17,11 @@
       };
 
       settings = {
+        "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
         "gfx.webrender.all" = true;
         "media.ffmpeg.vaapi.enabled" = true;
         "media.hardware-video-decoding.enabled" = true;
-        "privacy.resistFingerprinting" = true;
+        "privacy.resistFingerprinting" = false;
         "privacy.clearOnShutdown.cookies" = false;
         "privacy.clearOnShutdown_v2.cookies" = false;
         "privacy.clearOnShutdown.sessions" = false;
@@ -29,6 +30,10 @@
         "browser.startup.page" = 3;
         "browser.download.panel.shown" = true;
         "extensions.autoDisableScopes" = 0;
+
+	"media.eme.enabled" = true;            
+        "media.gmp-widevinecdm.visible" = true;
+        "media.gmp-widevinecdm.enabled" = true;
       };
 
       search = {
